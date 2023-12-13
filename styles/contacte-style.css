@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Ubuntu';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  padding: 30px 15%;
+  position: relative;
+}
+
+header * {
+  display: inline-block;
+}
+
+.header-logo {
+  gap: 5px;
+}
+
+header .mobile-bars {
+  float: right;
+}
+
+
+.header-logo p {
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  font-weight: 300;
+}
+
+header nav {
+  /* display: block; */
+  float: right;
+  gap: 35px;
+}
+
+.utilities {
+  
+  gap: 10px;
+}
+
+.navlist li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.navlist li a {
+  color:#4C5866;
+  font-size: 20px;
+}
+
+
+.mobile-bars {
+  display: none;
+}
+.menu-mobile {
+  display: none;
+}
+input {
+  display: none !important;
+}
+
+/* Phone menu */
+@media screen and (max-width: 767px) {
+  .mobile-bars {
+    display: block;
+    float: right;
+  }
+  header nav {
+    display: none;
+  }
+  #menu-toggle:checked ~ .menu-mobile {
+    display: inline-block;
+  }
+  label {
+    float: right !important;
+  }
+  #menu-toggle {
+    display: block;
+    float: right;
+  }
+  .menu-mobile {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #ececec;
+    color: #343434;
+    border-radius: 15px;
+    padding: 20px;
+    width: 75%;
+  }
+  .menu-mobile .navbar li{
+    display: block;
+    margin-bottom: 25px;
+  }
+  .menu-mobile .navbar li:last-child {
+    margin-bottom: 0;
+  }
+  
+  header,
+  main,
+  footer {
+    padding: 15px 5% !important;
+  }
+
+}
+
+
+/* Main */
+main {
+  padding: 30px 15%;
+}
+
+main h1 {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+/* Hero */
+.hero iframe {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.hero .contact .socials {
+  display: inline-block;
+}
+
+.hero .contact .address {
+  display: inline-block;
+  float: right;
+}
+
+.hero .contact .address div {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.hero .contact .address p,
+.hero .contact .address i {
+  display: inline-block;
+  font-size: 26px;
+}
+
+.hero .contact .address i {
+  margin-left: 10px;
+}
+
+.hero .contact .socials div {
+  margin-top: 15px;
+}
+
+.hero .contact .socials .facebook p,
+.hero .contact .socials .instagram p,
+.hero .contact .socials .twitter p {
+  display: inline-block;
+  font-size: 26px;
+}
+.hero .contact .socials i {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+
+/* Footer */
+footer {
+  padding: 30px 15%;
+  
+  background-color: #4C5866;
+}
+
+.footer-logo {
+}
+
+footer * {
+  display: inline-block;
+}
+
+.footer-logo p {
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+footer .utilities {
+  float: right;
+}
+
+.copyright {
+  background-color: white;
+  color: black;
+
+  
+  height: 25px;
+}
+
+.copyright p {
+  color: #BCBCBC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main hr {
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 602px) {
+  footer {
+    margin-top: 50px;
+  }
+  .hero .contact .address {
+    margin-top: 25px;
+  }
+  #query {
+    margin-top: 150px;
+  }
+}
